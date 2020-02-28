@@ -1,0 +1,294 @@
+.center-module {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+    .news-module {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+
+        .top-img-block {
+            width:100%;
+            height: 100%;
+            margin-bottom: 10px;
+            // just try !!!!
+
+// max-width: 1366px
+            @media screen and(max-width: 1px) {
+                .top-img-link {
+                    flex-direction: column;
+
+                    .img-back {
+                        width: 100%;
+                        height: 290px;
+                    }
+
+                    .text-block {
+                        width: 100%;
+                        height: max-content;
+                    }
+                }
+            }
+
+            @media screen and(min-width: 0px) and(max-width: 2048px) {
+                .top-img-link {
+                    justify-content: flex-start;
+
+                    .img-back {
+                        width: 60.5%;
+                        height: 328px;
+                    }
+
+                    .text-block {
+                        width: 39.5%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .top-img-link {
+                display: flex;
+                width: 100%;
+                height: 100%;
+
+                .img-back {
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .text-block {
+                    position: relative;
+                    padding: 10px 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    color: white;
+                    font-family: '微软雅黑';
+                    overflow: hidden;
+
+
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 0;left: 0;
+                        width: 100%;height: 100%;
+                        background: transparent url('../../../../assets/images/onePhoto.jpg') center center no-repeat;
+                        filter: blur(16px);
+                        z-index: -1;
+                        background-size: cover;
+                    }
+
+                    a:hover {
+                        color: white;
+                        text-decoration: underline;
+                    }
+
+                    .text-title {
+                        font-size: 20px;
+                        font-weight: 600;
+                        word-break: break-word;
+                        margin-bottom: 13px;
+                    }
+
+                    .text {
+                        font-size: 12px;
+                        word-break: break-word;
+                        margin-bottom: 4px;
+                        overflow: hidden;
+                       text-overflow: ellipsis;
+                       display: -webkit-box;
+                       -webkit-line-clamp: 6;
+                       -webkit-box-orient: vertical;
+                    }
+
+                    .a-link {
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-bottom: 30px;  //
+                    }
+
+                    .pinglun {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                    }
+
+                }
+            }
+        }
+
+        .bottom-img-block {
+            width: 100%;
+            height: max-content;
+
+            .swiper-slide {
+                position: relative;
+                width: 170px;
+                height: max-content;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: max-content;
+                    // try!!!! jut test
+
+
+                    &:hover {
+                        .text {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    img {
+                        width: 90%;
+                        height: 80px;
+                        background-color: #eeeeee;
+                        border-radius: 3px;
+                    }
+
+                    .text {
+                        display: inline-block;
+                        width: 100%;
+                        font-size: 13px;
+                        color: #020E65;
+                        line-height: 16px;   /// 这个是旋转小新闻的介绍 也是两行 后面显示。。。
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-adv2{
+      width: 400px;
+      height: 260px;
+
+      img{
+        width: 400px;
+        width: 260px;
+      }
+
+    }
+
+    .news-list {
+        width: 100%;
+        height: max-content;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+
+        .news-li-list {
+            width: 100%;
+            height: max-content;
+            margin-bottom: 20px;
+            width: 100%;
+            height: max-content;
+
+
+
+            .big-imgShow {
+                width:100%;
+                height: max-content;
+                text-align: left;
+                margin-top: 20px;
+                // 带有底色 边框 阴影
+                border-radius: 4px;
+                overflow: hidden;
+                background-color: white;
+                box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);   // this is a test just try!!! can return future
+                padding: 10px !important;
+                text-align: center;  //为了使下面的img居中
+
+
+                img {
+                  //  width: 90%;
+                    height: 230px;
+
+                    display: inline-block;
+                }
+            }
+
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            .a-link {
+                display: block;
+                width: 100%;
+                height: max-content;
+                border-radius: 4px;
+                overflow: hidden;
+                background-color: white;
+                box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);   // this is a test just try!!! can return future
+                padding: 10px !important;
+
+
+                &:hover {
+                    background-color: lightgrey;
+                    .text-box {
+                        .title {
+                            color: #0078FF;
+                        }
+                    }
+                }
+
+                .img-show {
+                    position: relative;
+                    float: left;
+                    width: 35%;
+                    height: 133px;
+                    border-radius: 3px;
+                }
+
+                .text-box {
+                    position: relative;
+                    float: right;
+                    width: 60%;
+                    height: max-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .author {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        font-size: 14px;
+                        color: #6E7780;
+                         justify-content: space-between;
+                    }
+
+                    .title {
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        margin: 6px 0;
+                        color: #020E65;
+                        word-break: break-word;
+                    }
+
+                    .content {
+                        width: 100%;
+                        font-size: 14px;
+                        color: #2A2A2A;
+                        word-break: break-word;
+
+                        overflow: hidden;
+                       text-overflow: ellipsis;
+                       display: -webkit-box;
+                       -webkit-line-clamp: 3;
+                       -webkit-box-orient: vertical;   // 主键新闻描述部分 三行然后。。。
+                    }
+                }
+            }
+        }
+    }
+}

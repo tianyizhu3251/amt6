@@ -1,0 +1,98 @@
+.header-nav {
+    left:0;
+    width:100%;
+    height: 125px;
+    background-color: #02478A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 999;
+    margin-bottom: 40px;
+
+    .nav-important {
+        width: 90%;
+        height: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .register{
+          
+        }
+
+        .logo {
+            width: 300px;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .ant-input-search {
+            width: 600px;
+        }
+        .ant-btn-primary{
+          background-color: #d32323;
+          &:hover {
+                  background-color: #1890ff;
+          }
+
+        }
+
+        .login-module {
+            font-size: 14px;
+
+            .register {
+                height: 40px;
+                border-radius: 40px;
+                background-color: none;
+                border: none;
+                margin-right: 20px;
+                color: white;
+            }
+
+            .login {
+                border: 1px solid white;
+            }
+        }
+    }
+
+    .nav-text {
+        width: 100%;height: max-content;
+        display: flex;
+        justify-content: center;
+        margin-top: -2px;
+
+
+
+        ul {
+            display: flex;
+            justify-content: center;
+            background-color: #02478A;
+
+            li {
+                font-size: 14px;
+                font-weight: 400;
+                // color: #1890FF;
+                color: white;
+                margin-right: 40px;
+                .amt-font{
+                  font-style: italic;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover{
+
+                }
+                // a:hover {
+                //     text-decoration: underline;
+                // }
+            }
+        }
+    }
+}

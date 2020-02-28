@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+
+    p, a {
+        font-size: 12px;
+    }
+
+    .FooterProtocol {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

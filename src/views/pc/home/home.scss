@@ -1,0 +1,20 @@
+.ant-layout {
+    background-color: #EDEEF2;
+    // padding-top: 125px;
+
+    .header-nav {
+        position: relative;
+    }
+
+    .content-module-box {
+        position: relative;
+        margin: 0 auto;
+        width: 87.8444%;
+        height: max-content;
+
+        .content-left,
+        .content-center {
+            margin-right: 2.083333334999999%;
+        }
+    }
+}

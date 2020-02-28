@@ -1,0 +1,117 @@
+.container{
+
+
+    .article-container{
+
+      width: 100%;
+      height: max-content;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      padding: 55px;
+
+      h1{
+        font-size: 30px;
+        font-weight: 700;
+        word-break: break-word;
+        line-height: 1.1 ;
+        letter-spacing: -.016em;
+      }
+
+      .author-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+        font-size: 13px;
+
+        .author-block-content{
+          display: flex;
+          align-items: center;
+
+          .author-top{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 6px;
+
+            .share_button{
+                  display:flex;
+                  justify-content: space-around;
+                  margin-left: 30px;
+
+            }
+
+            .author-name{
+              font-size: 16px;
+              font-weight: 500;
+              margin-right: 8px;
+            }
+          }
+
+
+          .author-bottom{
+            display: flex;
+            color: #969696;
+            justify-content: space-between;
+
+          }
+        }
+
+
+
+
+
+
+          }
+
+          .article-description{
+            .ant-collapse-header{
+                  color: #7d9fab;
+
+                  &:hover{
+                    color: green;
+                  }
+            }
+
+          }
+    .article-html{
+      font-weight: 400;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #1d2228;
+      font: 13px/1.6 Helvetica Neue,Helvetica,Arial,sans-serif;
+
+  //    font-size: 16.5px;
+      line-height: 1.6;
+      letter-spacing: 0;
+      margin-bottom: 15px;
+      margin: 0;
+      border: 0 solid #101010;
+
+    p{
+      font-size: 1.231em;
+      line-height: 1.5;
+      letter-spacing: .3px;
+      margin: 0 0 .8em;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+
+    }
+
+
+
+    }
+
+
+
+
+
+}
